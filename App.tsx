@@ -37,25 +37,38 @@ const generateReviews = (): Review[] => {
 
 const RESORT_IMAGES = [
     ['https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=2080&auto=format&fit=crop', 'https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop', 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=2070&auto=format&fit=crop'],
-    ['https://images.unsplash.com/photo-1540541338287-41700207dee6?q=80&w=2070&auto=format&fit=crop', 'https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=1925&auto=format&fit=crop', 'https://images.unsplash.com/photo-1596436889106-be35e843f974?q=80&w=2070&auto=format&fit=crop']
+    ['https://images.unsplash.com/photo-1540541338287-41700207dee6?q=80&w=2070&auto=format&fit=crop', 'https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=1925&auto=format&fit=crop', 'https://images.unsplash.com/photo-1596436889106-be35e843f974?q=80&w=2070&auto=format&fit=crop'],
+    ['https://images.unsplash.com/photo-1584132967334-10e028bd69f7?q=80&w=2070&auto=format&fit=crop', 'https://images.unsplash.com/photo-1590073242678-70ee3fc28e8e?q=80&w=1925&auto=format&fit=crop', 'https://images.unsplash.com/photo-1615880341729-304051d9d75b?q=80&w=1974&auto=format&fit=crop'],
+    ['https://images.unsplash.com/photo-1563911302283-d2bc129e7570?q=80&w=1935&auto=format&fit=crop', 'https://images.unsplash.com/photo-1586611292717-f8284e477f3a?q=80&w=1974&auto=format&fit=crop', 'https://images.unsplash.com/photo-1598503328578-868e274b6813?q=80&w=1964&auto=format&fit=crop'],
 ];
 const ROOM_IMAGES = [
-    ['https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=2070&auto=format&fit=crop', 'https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&w=2070&auto=format&fit=crop', 'https://images.unsplash.com/photo-1554995207-c18c203602cb?q=80&w=2070&auto=format&fit=crop']
+    ['https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=2070&auto=format&fit=crop', 'https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&w=2070&auto=format&fit=crop', 'https://images.unsplash.com/photo-1554995207-c18c203602cb?q=80&w=2070&auto=format&fit=crop'],
+    ['https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1980&auto=format&fit=crop', 'https://images.unsplash.com/photo-1556912173-3e7ed36ea0d6?q=80&w=2070&auto=format&fit=crop', 'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?q=80&w=2070&auto=format&fit=crop'],
+    ['https://images.unsplash.com/photo-1616046229478-9901c5536a45?q=80&w=2070&auto=format&fit=crop', 'https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?q=80&w=2070&auto=format&fit=crop', 'https://images.unsplash.com/photo-1615874959474-d609969a20ed?q=80&w=1932&auto=format&fit=crop'],
+    ['https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2158&auto=format&fit=crop', 'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?q=80&w=2070&auto=format&fit=crop', 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=2070&auto=format&fit=crop']
 ];
 const ROOM_RENT_IMAGES = [
-    ['https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=2070&auto=format&fit=crop', 'https://images.unsplash.com/photo-1595526114035-0d45ed16da31?q=80&w=1974&auto=format&fit=crop', 'https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=2070&auto=format&fit=crop']
+    ['https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=2070&auto=format&fit=crop', 'https://images.unsplash.com/photo-1595526114035-0d45ed16da31?q=80&w=1974&auto=format&fit=crop', 'https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=2070&auto=format&fit=crop'],
+    ['https://images.unsplash.com/photo-1560185893-a55de8537e49?q=80&w=1974&auto=format&fit=crop', 'https://images.unsplash.com/photo-1540518614846-7eded433c457?q=80&w=2057&auto=format&fit=crop', 'https://images.unsplash.com/photo-1571509532163-7ca671a531f2?q=80&w=1974&auto=format&fit=crop'],
+    ['https://images.unsplash.com/photo-1617324819263-06b2a1a8c3d4?q=80&w=2070&auto=format&fit=crop', 'https://images.unsplash.com/photo-1578898887932-dce23a595ad7?q=80&w=1974&auto=format&fit=crop', 'https://images.unsplash.com/photo-1519996529931-28324d5a630e?q=80&w=1974&auto=format&fit=crop'],
+    ['https://images.unsplash.com/photo-1505693416388-ac5ce0687954?q=80&w=2070&auto=format&fit=crop', 'https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069&auto=format&fit=crop', 'https://images.unsplash.com/photo-1562046894-34e819b131d0?q=80&w=1964&auto=format&fit=crop']
 ];
 const HOUSE_IMAGES = [
-    ['https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=2070&auto=format&fit=crop', 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1974&auto=format&fit=crop', 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=2070&auto=format&fit=crop']
+    ['https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=2070&auto=format&fit=crop', 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1974&auto=format&fit=crop', 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=2070&auto=format&fit=crop'],
+    ['https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop', 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2070&auto=format&fit=crop', 'https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?q=80&w=2070&auto=format&fit=crop'],
+    ['https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop', 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=2070&auto=format&fit=crop', 'https://images.unsplash.com/photo-1628592102751-ba83b0314276?q=80&w=1974&auto=format&fit=crop'],
 ];
 const PG_IMAGES = [
-    ['https://images.unsplash.com/photo-1593349480503-685d3a5a2185?q=80&w=2070&auto=format&fit=crop', 'https://images.unsplash.com/photo-1555854877-bab0b56448d1?q=80&w=2070&auto=format&fit=crop', 'https://images.unsplash.com/photo-1627222295940-aae127618a4a?q=80&w=1986&auto=format&fit=crop']
+    ['https://images.unsplash.com/photo-1593349480503-685d3a5a2185?q=80&w=2070&auto=format&fit=crop', 'https://images.unsplash.com/photo-1555854877-bab0b56448d1?q=80&w=2070&auto=format&fit=crop', 'https://images.unsplash.com/photo-1627222295940-aae127618a4a?q=80&w=1986&auto=format&fit=crop'],
+    ['https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?q=80&w=2070&auto=format&fit=crop', 'https://images.unsplash.com/photo-1549637775-7171556093a1?q=80&w=1974&auto=format&fit=crop', 'https://images.unsplash.com/photo-1600579157249-3a3d43f2a74c?q=80&w=2070&auto=format&fit=crop'],
 ];
 const OFFICE_IMAGES = [
-    ['https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=1974&auto=format&fit=crop', 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop', 'https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=2070&auto=format&fit=crop']
+    ['https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=1974&auto=format&fit=crop', 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop', 'https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=2070&auto=format&fit=crop'],
+    ['https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2084&auto=format&fit=crop', 'https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?q=80&w=2070&auto=format&fit=crop', 'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop'],
 ];
 const COMMERCIAL_IMAGES = [
-    ['https://images.unsplash.com/photo-1449247709967-d4461a6a6103?q=80&w=2071&auto=format&fit=crop', 'https://images.unsplash.com/photo-1521017432531-fbd92d768814?q=80&w=2070&auto=format&fit=crop', 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?q=80&w=2070&auto=format&fit=crop']
+    ['https://images.unsplash.com/photo-1449247709967-d4461a6a6103?q=80&w=2071&auto=format&fit=crop', 'https://images.unsplash.com/photo-1521017432531-fbd92d768814?q=80&w=2070&auto=format&fit=crop', 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?q=80&w=2070&auto=format&fit=crop'],
+    ['https://images.unsplash.com/photo-1577413444983-c088855bf7e4?q=80&w=2070&auto=format&fit=crop', 'https://images.unsplash.com/photo-1556740738-b6a63e2775d2?q=80&w=2070&auto=format&fit=crop', 'https://images.unsplash.com/photo-1596796433291-c42371b9506e?q=80&w=2070&auto=format&fit=crop'],
 ];
 
 
@@ -193,17 +206,16 @@ const App: React.FC = () => {
   const [currency, setCurrency] = useState<Currency>('USD');
   const [cart, setCart] = useState<Property[]>([]);
   
-  const [pathname, setPathname] = useState(window.location.pathname);
+  const [pathname, setPathname] = useState(window.location.hash.substring(1) || '/');
 
   useEffect(() => {
-    const onLocationChange = () => setPathname(window.location.pathname);
-    window.addEventListener('popstate', onLocationChange);
-    return () => window.removeEventListener('popstate', onLocationChange);
+    const handleHashChange = () => setPathname(window.location.hash.substring(1) || '/');
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
 
   const navigate = (path: string) => {
-    window.history.pushState({}, '', path);
-    setPathname(path);
+    window.location.hash = path;
   };
   
   const allProperties = React.useRef<Map<string, Property>>(new Map());
